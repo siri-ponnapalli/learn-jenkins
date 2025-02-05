@@ -63,7 +63,7 @@ pipeline {
             deleteDir()
         }
         success{
-            echo "This section run when pipiline success"
+            echo "This section run when   pipiline success"
         }
         failure{
             echo "This section run when pipiline fail"
