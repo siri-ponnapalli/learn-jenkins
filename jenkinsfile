@@ -40,7 +40,7 @@ pipeline {
             }
             steps {
                 script{
-                    echo "This is deploy"
+                    echo "This is  deploy"
                    // error 'pipeline failed'
                 }
                 
