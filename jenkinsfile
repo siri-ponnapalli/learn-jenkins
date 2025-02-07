@@ -5,7 +5,12 @@ pipeline {
     options {
         timeout(time: 30, unit: 'SECONDS')
         disableConcurrentBuilds()
-    }  
+    }
+        
+    environment {
+    DEBUG = 'true'
+    }    
+      
     parameters {
         string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
         text(name: 'BIOGRAPHY', defaultValue: '', description: 'Enter some information about the person')
